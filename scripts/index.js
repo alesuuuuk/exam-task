@@ -20,10 +20,10 @@ const showPassword = (selector) => {
 
     if (passwordInput && passwordInput.type === "password") {
         passwordInput.type = "text";
-        // passwordIcon.setAttribute("name", "unlock-outline");
+        passwordIcon.setAttribute("name", "unlock");
     } else {
         passwordInput.type = "password";
-        // passwordIcon.setAttribute("name", "lock-closed-outline");
+        passwordIcon.setAttribute("name", "lock");
     }
 };
 
