@@ -14,6 +14,7 @@ const toNextPage = () => {
     window.open('/pages/home.html', '_self');
 };
 
+// showing password on click to img
 const showPassword = (selector) => {
     const passwordInput = document.querySelector(selector);
     const passwordIcon = document.querySelector("#password_img");
@@ -32,12 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // getting elements from DOM
     const USER_LOGIN_FORM = document.querySelector(".form");
     const PASSWORD_ICON = document.querySelector("#password_img");
-    PASSWORD_ICON.addEventListener("click", ()=>{
-        let passwordIconName = PASSWORD_ICON.getAttribute("name")
-        PASSWORD_ICON.setAttribute("name", "airplane-outline")
-    });
-    
-    
     // adding listeners
     USER_LOGIN_FORM.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -46,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const USER_EMAIL = document.querySelector("#user_email").value; // user email
         const USER_PASSWORD = document.querySelector("#user_password").value; // user password   
         userDataToLocalStorage(USER_PHONE_NUMBER, USER_EMAIL, USER_PASSWORD); // here we're creating data frame and sending it to LS
-        toNextPage();
+        toNextPage(); // opening home page 
 
     });
     PASSWORD_ICON.addEventListener("click", () => {

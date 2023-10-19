@@ -1,78 +1,69 @@
-body {
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+*{
     padding: 0;
-    font-family: Arial, sans-serif;
-    
+    margin: 0;
 }
 
-.container {
-    margin: 0 auto;
-    background-image: url('/imgs/login_background_image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body{
+    min-height: 100vh;
+    font-family: 'poppins', sans-serif;
 }
 
-header {
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for readability */
-    padding: 20px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu-icon {
-    display: none; /* Hide the menu icon by default on larger screens */
-    cursor: pointer;
-}
-
-.menu-icon .bar {
-    width: 25px;
-    height: 3px;
+nav{
     background-color: white;
-    margin: 4px 0;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.menu {
+nav ul{
+    width: 100%;
     list-style: none;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 50px;
 }
 
-.menu li {
-    margin: 0 20px;
-}
-
-.menu a {
+nav a{
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #000;
 }
 
-/* Media query to make the menu icon visible and toggle the menu on small screens */
-@media (max-width: 768px) {
-    .menu {
-        display: none; /* Hide the menu on small screens */
-    }
+nav a:hover{
+    background-color: #f0f0f0;
+}
 
-    .menu-icon {
-        display: block; /* Show the menu icon on small screens */
-    }
+nav li:first-child{
+    margin-right: auto;
+}
 
-    .menu.active {
-        display: flex; /* Display the menu when active */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        padding: 10px;
-    }
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.199);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
-    .menu.active li {
-        margin: 10px 0;
-    }
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
 }
