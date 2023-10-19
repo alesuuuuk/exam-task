@@ -15,27 +15,25 @@
         background-size: cover;
       "
     >
-      <nav>
+    <nav>
         <ul>
           <li><a href="#">Logo</a></li>
-
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Rooms</a></li>
-          <li><a href="#">History of puarches</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+          <li class="nav__items_hideOnMobile"><a href="#">Home</a></li>
+          <li class="nav__items_hideOnMobile"><a href="#">Rooms</a></li>
+          <li class="nav__items_hideOnMobile"><a href="#">History of purchases</a></li>
+          <li class="nav__items_hideOnMobile"><a href="#">About us</a></li>
+          <li class="nav__items_hideOnMobile"><a href="#">Pricing</a></li>
+          <li class="burger__menu_svg" onclick="showAndHideBurgerMenu(this)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
         </ul>
-        <ul class="sidebar">
-          <li><a href="#">Logo</a></li>
-
+        <ul class="burger__menu">
+          <li  onclick="showAndHideBurgerMenu(this)"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
           <li><a href="#">Home</a></li>
           <li><a href="#">Rooms</a></li>
-          <li><a href="#">History of puarches</a></li>
+          <li><a href="#">History of purchases</a></li>
           <li><a href="#">About us</a></li>
           <li><a href="#">Pricing</a></li>
         </ul>
-      </nav>
+      </nav>      
     </header>
     <script src="/scripts/home.js"></script>
   </body>

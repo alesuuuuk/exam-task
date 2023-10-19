@@ -44,7 +44,7 @@ nav li:first-child{
     margin-right: auto;
 }
 
-.sidebar{
+.burger__menu{
     position: fixed;
     top: 0;
     right: 0;
@@ -59,11 +59,30 @@ nav li:first-child{
     align-items: flex-start;
     justify-content: flex-start;
 }
+.burger__menu_svg{
+    display: none;
+}
 
-.sidebar li{
+.burger__menu li{
     width: 100%;
 }
 
-.sidebar a{
+.burger__menu a{
     width: 100%;
+}
+
+
+@media screen and (max-width: 850px){
+    .nav__items_hideOnMobile{
+        display: none;
+    }
+    .burger__menu_svg{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .burger__menu{
+        width: 100%;
+    }
 }
