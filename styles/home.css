@@ -1,45 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-header{
+header {
     height: 200px;
     padding: 0px 20px;
     padding-top: 20px;
-    
-    
+
+
 }
 
-body{
+body {
     min-height: 100vh;
     font-family: 'poppins', sans-serif;
 }
 
-nav{
+nav {
     background-color: white;
     box-shadow: 3px 3px 5px rgb(0, 0, 0);
     border-radius: 12px;
     max-width: 850px;
-margin: auto;    
+    margin: auto;
 
 }
 
-nav ul{
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-nav li{
+
+nav li {
     height: 50px;
 }
 
-nav a{
+
+
+nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
@@ -48,16 +51,16 @@ nav a{
     color: #000;
 }
 
-nav a:hover{
-    background-color: #a8a7a7;
-    
+nav a:hover {
+    background-color: #a7a0a0;
+    border-radius: 12px;
 }
 
-nav li:first-child{
+nav li:first-child {
     margin-right: auto;
 }
 
-.burger__menu{
+.burger__menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -72,30 +75,32 @@ nav li:first-child{
     align-items: flex-start;
     justify-content: flex-start;
 }
-.burger__menu_svg{
+
+.burger__menu_svg {
     display: none;
 }
 
-.burger__menu li{
+.burger__menu li {
     width: 100%;
 }
 
-.burger__menu a{
+.burger__menu a {
     width: 100%;
 }
 
 
-@media screen and (max-width: 750px){
-    .nav__items_hideOnMobile{
+@media screen and (max-width: 750px) {
+    .nav__items_hideOnMobile {
         display: none;
     }
-    .burger__menu_svg{
+
+    .burger__menu_svg {
         display: block;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .burger__menu{
+    .burger__menu {
         width: 100%;
     }
 }
