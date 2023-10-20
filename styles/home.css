@@ -6,6 +6,14 @@
     margin: 0;
 }
 
+header{
+    height: 200px;
+    padding: 0px 20px;
+    padding-top: 20px;
+    
+    
+}
+
 body{
     min-height: 100vh;
     font-family: 'poppins', sans-serif;
@@ -13,7 +21,12 @@ body{
 
 nav{
     background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    border-radius: 12px;
+    max-width: 850px;
+    position: relative;
+    
+
 }
 
 nav ul{
@@ -37,7 +50,8 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #f0f0f0;
+    background-color: #a8a7a7;
+    
 }
 
 nav li:first-child{
@@ -72,7 +86,7 @@ nav li:first-child{
 }
 
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 750px){
     .nav__items_hideOnMobile{
         display: none;
     }
