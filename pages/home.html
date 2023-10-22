@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="https://ionic.io/ionicons" />
   </head>
   <body>
     <header
@@ -44,37 +45,35 @@
           <h2>Book a room</h2>
           <p>Discover the perfect space with us <span id="user_name"></span></p>
         </div>
-  
-        <div class="book__room_box_form">
-          <div class="book__room_box_form_date">
-            <p class="book__room_box_form_select_person_paragraph">Date</p>
-            <input id="book__room_box_form_date" type="date"  />
+        <form class="book__room_box_form">
+          <div>
+            <p class="book__room_box_form_select_person_paragraph"><ion-icon name="calendar-outline"></ion-icon> Date</p>
+            <input required class="book__room_box_form_fields" id="book__room_box_form_date" type="date"  />
           </div>
           <div>
-            <p class="book__room_box_form_select_person_paragraph">Person</p>
-          <select id="book__room_box_form_select_adults">
-            <option disabled selected value="">Adults</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
+            <p class="book__room_box_form_select_person_paragraph"><ion-icon name="person-outline"></ion-icon> Adults</p>
+          <select class="book__room_box_form_fields" id="book__room_box_form_select_adults">
+            <option value="1">Adults: 1</option>
+            <option value="2">Adults: 2</option>
+            <option value="3">Adults: 3</option>
+            <option value="4">Adults: 4</option>
+            <option value="5">Adults: 5</option>
+            <option value="6">Adults: 6</option>
           </select>
           </div>
-         <div> <p class="book__room_box_form_select_person_paragraph">Children</p>
-          <select  id="book__room_box_form_select_children">
-            <option disabled selected value="">Children</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option></div>
-            
+         <div> <p class="book__room_box_form_select_person_paragraph"><ion-icon name="accessibility-outline"></ion-icon> Children</p>
+          <select class="book__room_box_form_fields" id="book__room_box_form_select_children">
+            <option selected value="0">Children: 0</option>
+            <option  value="1"> Children: 1</option>
+            <option value="2">Children: 2</option>
+            <option value="3">Children: 3</option></div>
           </select>
-        </div>
-        <input id="book__room_box_form_submit" value="BOOK NOW" type="submit">
+          <input id="book__room_box_form_submit" value="BOOK NOW" type="submit">
+        </form>
       </div>
-      
     </section>
-    <script src="/scripts/home.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/scripts/home.js"></script>      
   </body>
 </html>
