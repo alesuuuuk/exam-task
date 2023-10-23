@@ -34,13 +34,13 @@ const showUserName = (selector, name) => {
 // reacting on user booking a room
 const bookFormSubmit = () => {
     const date = document.getElementById('book__room_box_form_date').value;
-        const adults = document.getElementById('book__room_box_form_select_adults').value;
-        const children = document.getElementById('book__room_box_form_select_children').value;
+    const adults = document.getElementById('book__room_box_form_select_adults').value;
+    const children = document.getElementById('book__room_box_form_select_children').value;
 
-        // Виводимо введені дані в консоль
-        console.log('Дата: ' + date);
-        console.log('Кількість дорослих: ' + adults);
-        console.log('Кількість дітей: ' + children);
+    // Виводимо введені дані в консоль
+    console.log('Дата: ' + date);
+    console.log('Кількість дорослих: ' + adults);
+    console.log('Кількість дітей: ' + children);
 };
 
 // start point
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Додаємо обробник події submit
     form.addEventListener("submit", (event) => {
-        event.preventDefault(); 
+        event.preventDefault();
         // get data from field
         bookFormSubmit();
     });
