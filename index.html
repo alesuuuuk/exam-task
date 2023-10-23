@@ -15,18 +15,18 @@
         <form class="form" action="">
           <h2>Login</h2>
           <div class="inputbox">
-            <ion-icon name="call-outline"></ion-icon>
-            <input id="user_name" type="text" />
+            <ion-icon name="person-circle-outline"></ion-icon>
+            <input id="user_name" type="text" required />
             <label for="">Your name</label>
           </div>
           <div class="inputbox">
             <ion-icon name="mail-outline"></ion-icon>
-            <input id="user_email" type="email" />
+            <input id="user_email" type="email" required />
             <label for="">Email</label>
           </div>
           <div class="inputbox">
             <ion-icon id="password_img" name="lock-closed-outline"></ion-icon>
-            <input id="user_password" type="password" />
+            <input id="user_password" type="password" required/>
             <label for="">Password</label>
           </div>
           <div class="forget">
@@ -48,5 +48,4 @@
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="/scripts/index.js"></script>
 </body>
-
 </html>

@@ -277,6 +277,15 @@ margin-top: 4px;
 
 }
 
+@media screen and (min-width: 1850px) {
+    .facilities__boxes_small{
+        justify-content: space-between;
+    }
+    .facilities__boxes_small_box{
+        height: 400px;
+    }
+}
+
 @media (min-width: 768px) {
     .special__offers_cards_item img {
         width: 100%;
