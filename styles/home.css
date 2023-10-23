@@ -288,7 +288,7 @@ margin-top: 4px;
 
 @media (min-width: 768px) {
     .special__offers_cards_item img {
-        width: 100%;
+        width: 700px;
         height: 600px;
     }
 }
@@ -385,6 +385,13 @@ margin-top: 4px;
         height: 200px;
     }
 }
+
+@media screen and(min-width: 1850px) {
+    .facilities__boxes_small_box{
+        height: 400px;
+    }
+}
+
 
 /* book submit */
 @media screen and (max-width: 370px) {
