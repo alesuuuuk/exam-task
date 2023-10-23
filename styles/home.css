@@ -188,7 +188,7 @@ nav li:first-child {
   
   /* Style the title section */
   .special__offers_title {
-    text-align: left; /* Align the title at the beginning */
+    text-align: center; /* Align the title at the beginning */
     margin-bottom: 20px;
     display: block; /* Display the title as a block */
   }
